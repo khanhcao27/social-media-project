@@ -95,7 +95,7 @@ login_btn.addEventListener("click", function () {
 
       setTimeout(() => {
         // ở đây a chuyển sang trang home để làm mẫu CRUD cho các em
-        window.location.href = "../HTML_Files/home.html";
+        window.location.href = "./HTML_Files/home.html";
       }, 2000);
     })
     .catch((err) => {
