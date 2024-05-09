@@ -153,29 +153,3 @@ renderAdminPosts();
 //     console.error(error);
 //   }
 // });
-
-///////////////////////////////////////////// Create
-add_user_btn.addEventListener("click", function () {
-  // let userRef = ref(database, "users/" + user_name_input.value);
-
-  const dbRef = ref(getDatabase());
-
-  get(child(dbRef, `student/first_student`)).then((snapshot) => {
-    // nếu tên người dùng bạn nhập trùng với tên có rồi trong firebase thì snap.exists() == true
-    // => Lúc này mình thể add 1 user có tên như vậy nữa
-    // nếu tên người dùng bạn nhập trùng ko với tên có rồi trong firebase thì snap.exists() == false
-    // => Cho phép user đó đc add vào trong firebase
-    if (snapshot.exists() == false) {
-      set(ref(database, "student/first_student"), {
-        
-        userage: user_age_input.value,
-        usefavor: ["Ăn", "Ngủ", "Nghỉ"],
-        // user_avatar: imageURL,
-      });
-
-      alert("Tạo tài khoản thành công");
-    } else {
-      alert("Tên này đã được sử dụng, vui lòng nhập tên khác");
-    }
-  });
-});
