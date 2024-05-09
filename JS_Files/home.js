@@ -62,6 +62,7 @@ let userUID_login = localStorage.getItem("userUID_login");
 
 if (username_login != "") {
   document.querySelector("#username_login").innerText = username_login;
+  useracc.innerText = username_login
   // document.querySelector("#userUID_login").innerText = userUID_login;
 } else if (username_login == "") {
   document.querySelector("#username_login").innerText =
@@ -69,6 +70,7 @@ if (username_login != "") {
 
   document.querySelector("#userUID_login").innerText = "ID rỗng";
 }
+
 
 // Nút đăng xuất
 /**
@@ -109,7 +111,9 @@ function renderAdminPosts() {
                   <img
                     src="${data[i].post_image}"
                     alt=""
-                  />
+                    />
+                  <hr />
+                    <button>Bình luận</button>
         `;
         All_Posts_Container.appendChild(div);
       }
@@ -120,36 +124,3 @@ function renderAdminPosts() {
 }
 renderAdminPosts();
 
-/////////////////////////////////////////////// upload image
-// const fileInput = document.getElementById("fileInput"); // Input element for file selection
-// const imageGallery = document.getElementById("imageGallery"); // Container for displaying images
-
-// var imageURL = "";
-
-// fileInput.addEventListener("change", async function (e) {
-//   const file = e.target.files[0]; // Get the selected file
-
-//   // Create a storage reference
-//   const storageRef = dbRefImage(storage, "images/" + file.name);
-
-//   try {
-//     // Upload file to Firebase Storage
-//     const snapshot = await uploadBytes(storageRef, file);
-
-//     // Get the download URL after successful upload
-//     const downloadURL = await getDownloadURL(snapshot.ref);
-//     imageURL = downloadURL;
-//     console.log(downloadURL);
-
-//     // Store downloadURL in Firebase Database for retrieval
-//     const dbImagesRef = ref(database, "images");
-//     push(dbImagesRef, {
-//       imageURL: downloadURL,
-//     });
-
-//     // window.location.reload();
-//   } catch (error) {
-//     // Handle any errors while uploading
-//     console.error(error);
-//   }
-// });
