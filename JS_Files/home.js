@@ -79,8 +79,6 @@ let logout_btn = document.querySelector("#logout");
 logout_btn.addEventListener("click", function () {
   localStorage.setItem("username_login", "");
   localStorage.setItem("userUID_login", "");
-
-  location.reload();
   window.location.href = "../index.html";
 });
 
