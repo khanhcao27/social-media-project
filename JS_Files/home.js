@@ -81,7 +81,7 @@ logout_btn.addEventListener("click", function () {
   localStorage.setItem("userUID_login", "");
 
   location.reload();
-  // window.location.href = "../HTML_Files/signinandup.html";
+  window.location.href = "../index.html";
 });
 
 
