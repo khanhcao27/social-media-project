@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC - Feedback</title>
+    <script src="https://kit.fontawesome.com/b4cde7a26f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS_Files/user_feedback.css">
+</head>
+<body>
+  <div class="menu_container">
+    <div class="menu">
+      <div>
+        <div>
+          <a href="./home.html"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+        </div>
+        <div>
+          <a href="./user_friends.html"><i class="fa-solid fa-user-group"></i>Bạn Bè</a>
+        </div>
+        <div>
+          <a href="./user_notifications.html"><i class="fa-solid fa-bell"></i>Thông Báo</a>
+        </div>
+        <div>
+          <a href="./user_setting.html"><i class="fa-solid fa-gear"></i>Cài Đặt</a>
+          <div>
+            <a href="./user_feedback.html"><i class="fa-solid fa-comment-dots"></i>Góp Ý</a>
+          </div>
+        </div>
+        <!-- hiển thị tên người vừa đăng nhập -->
+        <div>
+          <a href="./user_account.html"><span id="username_login">ABC</span></a>
+        </div>
+
+        <!-- <div>
+            UID:
+            <span id="userUID_login" style="color: rgb(236, 255, 236)"
+              >000000000</span
+            >
+          </div> -->
+
+        <!-- Nút đăng xuất -->
+        <button id="logout">Đăng Xuất</button>
+      </div>
+    </div>
+  </div>
+    <!-- modify this form HTML and place wherever you want your form -->
+    <div class="feedback_container">
+      <form
+      action="https://formspree.io/f/xleqzqzr"
+      method="POST"
+      >
+      <label class="feedback">
+        <b>Góp ý cho chúng tôi:</b>
+        <textarea name="message" placeholder="Hãy gửi cho chúng tôi những ý kiến của bạn, mọi góp ý luôn được lắng nghe!"></textarea>
+        <!-- your other form fields go here -->
+        <button class="send_feedback" style="cursor: pointer; " type="submit">Gửi</button>
+      </label>
+      </form>
+    </div>
+<script type="module" src="../JS_Files/user_feedback.js"></script>
+</body>
+</html>

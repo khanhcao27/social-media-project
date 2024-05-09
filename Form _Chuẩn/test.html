@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let categoryArray = [
+        {
+          id: "sign-up-form",
+          name: "Sign-Up-Form",
+          category: "HTML",
+        },
+        {
+          id: "rainbow-circles",
+          name: "Rainbow Circles",
+          category: "CSS",
+        },
+
+        {
+          id: "hoc-toan",
+          name: "Học Toán",
+          category: "Javascript",
+        },
+
+        {
+          id: "tam-giac",
+          name: "Tam Giac",
+          category: "CSS",
+        },
+      ];
+
+      let questionByCategory = {};
+
+      categoryArray.forEach((question) => {
+        if (questionByCategory.hasOwnProperty(question.category)) {
+          questionByCategory[question.category].push(question);
+        } else {
+          questionByCategory[question.category] = [question];
+        }
+      });
+
+      for (const [category, question] of Object.entries(questionByCategory)) {
+        console.log(`${category}: ${question}`);
+      }
+
+      //   console.log(questionByCategory);
+
+      console.log(Object.entries(questionByCategory));
+    </script>
+  </body>
+</html>

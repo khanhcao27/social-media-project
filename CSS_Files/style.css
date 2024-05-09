@@ -1,0 +1,18 @@
+/* Custom CSS styles */
+.container {
+    margin-top: 50px;
+}
+
+.post {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    margin-bottom: 5px;
+}

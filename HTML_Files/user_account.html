@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSC - Tài Khoản</title>
+  <script src="https://kit.fontawesome.com/b4cde7a26f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS_Files/user_account.css" />
+</head>
+
+<body>
+
+
+
+  <div class="menu_container">
+    <div class="menu">
+      <div>
+        <div>
+          <a href="./home.html"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+        </div>
+        <div>
+          <a href="./user_friends.html"><i class="fa-solid fa-user-group"></i>Bạn Bè</a>
+        </div>
+        <div>
+          <a href="./user_notifications.html"><i class="fa-solid fa-bell"></i>Thông Báo</a>
+        </div>
+        <div>
+          <a href="./user_setting.html"><i class="fa-solid fa-gear"></i>Cài Đặt</a>
+          <div>
+            <a href="./user_feedback.html"><i class="fa-solid fa-comment-dots"></i>Góp Ý</a>
+          </div>
+        </div>
+        <!-- hiển thị tên người vừa đăng nhập -->
+        <div>
+          <a href="./user_account.html"><span id="username_login">ABC</span></a>
+        </div>
+
+        <!-- <div>
+            UID:
+            <span id="userUID_login" style="color: rgb(236, 255, 236)"
+              >000000000</span
+            >
+          </div> -->
+
+        <!-- Nút đăng xuất -->
+        <button id="logout">Đăng Xuất</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="body_content">
+    <div class="information_bar"></div>
+
+    <div class="posts">
+      <!-- <h1>Phần đăng bài</h1> -->
+      <div class="user_post_container">
+        <div class="input_container">
+          <h2>Bài Viết mới</h2>
+          <input type="text" placeholder="Tên Người Đăng" name="" id="post_author" readonly />
+          <input type="text" placeholder="Tiêu Đề" name="" id="post_name" />
+          <input type="text" placeholder="Hình Ảnh" name="" id="post_image" />
+          <textarea type="text" placeholder="Nội Dung" name="" id="post_content"></textarea>
+          <div>
+            <button id="post_button" style="background-color: rgb(98, 181, 98)">
+              Đăng Bài
+            </button>
+
+            <button id="save_button" style="background-color: red">Lưu</button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="post_list">
+          <div class="post_interface">
+            <div class="description">
+              <u><i>Author...</i></u>
+              <div class="line1">
+                <h3>Post Name</h3>
+                <div class="date">
+                  <i class="fa-solid fa-clock"></i><i> 03/05/2024</i>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio error ea quas voluptas sit similique, maiores eaque
+                alias quidem in, perferendis dignissimos modi voluptatibus
+                perspiciatis. Nemo neque nisi tempora reprehenderit?
+              </p>
+            </div>
+            <img
+              src="https://cdn.tgdd.vn/Files/2021/07/24/1370572/cachdieukhienchuotbangbanphim3-_1366x768-800-resize.jpg"
+              alt="" />
+          </div>
+          <!--  -->
+          <div class="All_Posts">
+            <div class="All_Posts_Container">
+              <div class="Each_Posts">
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="change_infomations">
+    <div><b>ID Bài Viết:</b> <span id="postUID">000000000</span></div>
+    <h3>Thay đổi thông tin bài viết!</h3>
+    <input type="text" placeholder="Tên Người Đăng" name="" id="post_author_change" readonly />
+    <input type="text" placeholder="Tiêu Đề" name="" id="post_name_change" />
+    <input type="text" placeholder="Hình Ảnh" name="" id="post_image_change" />
+    <textarea type="text" placeholder="Nội Dung" name="" id="post_content_change"></textarea>
+    <button id="save_change_button" style="background-color: rgb(98, 181, 98)">
+      Lưu Bài Viết
+    </button>
+
+  </div>
+  <script type="module" src="../JS_Files/user_account.js"></script>
+</body>
+
+</html>
