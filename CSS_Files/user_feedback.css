@@ -6,6 +6,9 @@ body {
   
   .menu_container {
     background-color: orangered;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
   .menu {
@@ -48,6 +51,16 @@ body {
   .menu div div a:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
+
+  .logo_container {
+    width: 95px;
+    height: 64px;
+  }
+  
+  .logo_container img{
+    width: 95px;
+    height: 64px;
+  }
   
   #logout {
     padding: 10px 5px;
@@ -74,6 +87,7 @@ body {
     min-height: 200px;
     padding: 20px;
     background-color: aqua;
+    margin-top: 200px;
   }
 
   textarea {

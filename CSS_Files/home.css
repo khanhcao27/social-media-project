@@ -6,6 +6,9 @@ body {
 
 .menu_container {
   background-color: orangered;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menu {
@@ -71,24 +74,30 @@ body {
   height: 64px;
 }
 
-
-
 .body_content {
   display: flex;
   /* width: 1512.8px; */
   height: 1000vh;
   /* background-color: blue; */
   justify-content: space-between;
+  margin-top: 70px;
 }
 
 .interactive_bar {
-  width: 300px;
+  width: 100px;
   height: 100%;
-  background-color: wheat;
+  /* background-color: wheat; */
+  padding-left: 10px;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+.interactive_bar img {
+  width: 100%;
 }
 
 .new_posts {
-  width: 1000px;
+  width: 1200px;
   height: 1000vh;
   /* background-color: aqua; */
 }
@@ -99,6 +108,7 @@ body {
   padding-left: 10px;
   padding-top: 50px;
   padding-right: 10px;
+  /* background-color: blanchedalmond; */
 }
 
 .utility_bar img{
