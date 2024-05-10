@@ -62,12 +62,16 @@ body {
 }
 
 .logo_container {
-  ma
+  width: 95px;
+  height: 64px;
 }
 
-.logo_container img {
-  width: 20%;
+.logo_container img{
+  width: 95px;
+  height: 64px;
 }
+
+
 
 .body_content {
   display: flex;
@@ -79,20 +83,26 @@ body {
 
 .interactive_bar {
   width: 300px;
-  height: 1000vh;
+  height: 100%;
   background-color: wheat;
 }
 
 .new_posts {
-  width: 912.8px;
+  width: 1000px;
   height: 1000vh;
   /* background-color: aqua; */
 }
 
 .utility_bar {
-  width: 300px;
-  height: 1000vh;
-  /* background-color: black; */
+  width: 100px;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+.utility_bar img{
+  width: 100%;
 }
 
 /* Custom CSS styles */
@@ -129,10 +139,10 @@ body {
 }
 
 .All_Posts {
-  margin-top: 100px;
+  margin-top: 10px;
   width: 100%;
   min-height: 900px;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
 .All_Posts img {
@@ -141,9 +151,9 @@ body {
 
 .Each_Posts {
   margin-bottom: 30px;
-  border: red 1px solid;
+  /* border: red 1px solid; */
   /* border-radius: 2%; */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.749) 0px 3px 6px, rgba(0, 0, 0, 0.749) 0px 3px 6px;
 }
 
 .Each_Posts img {

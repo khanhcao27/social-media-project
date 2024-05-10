@@ -210,7 +210,7 @@ function renderAdminPosts() {
           post_UID.innerText = data[i].post_UID
           post_name_change.value = data[i].post_name
           post_image_change.value = data[i].post_image
-          post_content_change.value = data[i].sentences_interface.replaceAll("<br/>", "\n")
+          post_content_change.value = data[i].sentences_interface//.replaceAll("<br/>", "\n")
           updatePosts(data[i].post_UID)
         })
       }

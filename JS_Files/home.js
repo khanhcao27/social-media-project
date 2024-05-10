@@ -62,7 +62,7 @@ let userUID_login = localStorage.getItem("userUID_login");
 
 if (username_login != "") {
   document.querySelector("#username_login").innerText = username_login;
-  useracc.innerText = username_login
+  // useracc.innerText = username_login
   // document.querySelector("#userUID_login").innerText = userUID_login;
 } else if (username_login == "") {
   document.querySelector("#username_login").innerText =
@@ -113,7 +113,8 @@ function renderAdminPosts() {
                     alt=""
                     />
                   <hr />
-                    <button>Bình luận</button>
+                    <button id="comments_button">Bình luận</button>
+                    
         `;
         All_Posts_Container.appendChild(div);
       }
@@ -123,4 +124,6 @@ function renderAdminPosts() {
   });
 }
 renderAdminPosts();
+
+
 

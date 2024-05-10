@@ -10,31 +10,59 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <script>
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "327831217079193");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v16.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
 
 
-
-  <div class="menu_container">
-    <div class="menu">
+<div class="menu_container">
+  <div class="menu">
+    <div class="logo_container">
+      <a href="./home.html"><img src="../Pictures/logo1noback.png" alt=""></a>
+    </div>
+    <div>
       <div>
+        <a href="./home.html"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+      </div>
+      <div>
+        <a href="./user_notifications.html"><i class="fa-solid fa-bell"></i>Thông Báo</a>
+      </div>
+      <div>
+        <a href="./user_setting.html"><i class="fa-solid fa-gear"></i>Cài Đặt</a>
         <div>
-          <a href="./home.html"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+          <a href="./user_feedback.html"><i class="fa-solid fa-comment-dots"></i>Góp Ý</a>
         </div>
-        <div>
-          <a href="./user_friends.html"><i class="fa-solid fa-user-group"></i>Bạn Bè</a>
-        </div>
-        <div>
-          <a href="./user_notifications.html"><i class="fa-solid fa-bell"></i>Thông Báo</a>
-        </div>
-        <div>
-          <a href="./user_setting.html"><i class="fa-solid fa-gear"></i>Cài Đặt</a>
-          <div>
-            <a href="./user_feedback.html"><i class="fa-solid fa-comment-dots"></i>Góp Ý</a>
-          </div>
-        </div>
-        <!-- hiển thị tên người vừa đăng nhập -->
-        <div>
-          <a href="./user_account.html"><span id="username_login">ABC</span></a>
-        </div>
+      </div>
+      <!-- hiển thị tên người vừa đăng nhập -->
+      <div>
+        <a href="./user_account.html"><span id="username_login">ABC</span></a>
+      </div>
 
         <!-- <div>
             UID:
